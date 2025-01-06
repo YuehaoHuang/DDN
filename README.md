@@ -22,10 +22,6 @@ pip install -r requirements.txt
 
 从[指令数据集](http://ceres-solver.org/ceres-solver-2.0.0.tar.gz)下载
 
-### 预生成数据集
-
-从[预生成数据集](http://ceres-solver.org/ceres-solver-2.0.0.tar.gz)下载
-
 ### 预训练数据集
 
 从[预训练数据集](http://ceres-solver.org/ceres-solver-2.0.0.tar.gz)下载
@@ -35,8 +31,5 @@ pip install -r requirements.txt
 ### 导航策略测试
 
 ```
-python eval.py --mode=test_DDN --eval_path=$path_to_saved_model$ --dataset_mode=$train,test$ --seen_instruction=$0,1$  --device=cuda:0 --epoch=500 --eval_ckpt=$idx$
+python test.py --mode=test_DDN --dataset_mode=test --seen_instruction=1 --device=cuda:0 --epoch=50
 ```
-
-对于参数“dataset_mode”，“train”表示“seen_scene”，而“test”表示“unseen scene”。在测试过程中选择其中一个。
-对于参数“seen_instruction”，“1”表示“seen_direction”，而“0”表示“unseen_scene”。在测试过程中选择其中一个。
