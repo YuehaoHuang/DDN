@@ -12,7 +12,7 @@ git clone https://github.com/YuehaoHuang/DDN.git
 cd DDN
 conda create -n ddn python=3.9 -y
 source activate ddn
-pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f 
+pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html
 pip install -r requirements.txt
 ```
 
@@ -20,11 +20,11 @@ pip install -r requirements.txt
 
 ### 指令数据集
 
-从[指令数据集](http://ceres-solver.org/ceres-solver-2.0.0.tar.gz)下载
+从[指令数据集](https://pan.baidu.com/s/1ocg2nHophmIKLTC_oMi8dQ?pwd=m6v2)下载
 
 ### 预训练数据集
 
-从[预训练数据集](http://ceres-solver.org/ceres-solver-2.0.0.tar.gz)下载
+从[预训练数据集](https://pan.baidu.com/s/1_1Eu6ejnCnsgEUiYFZUmjw?pwd=nr8h)下载
 
 ## 测试
 
